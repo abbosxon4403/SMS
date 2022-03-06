@@ -1,0 +1,86 @@
+@import "blocks/blocks";
+body {
+    background-color: purple;
+}
+
+.chats {
+    max-width: 400px;
+    height: 700px;
+    background-color: blue;
+    background-image: url(../images/tlegray-bg.jpg);
+    position: relative;
+    margin: 0 auto;
+    &__flow {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 24px;
+    }
+}
+
+.chat {
+    position: relative;
+    @include chat();
+    background-color: #dddddd;
+    // left before
+    &--left::before {
+        @include before();
+        top: 0;
+        left: 0;
+        margin-left: -10px;
+    }
+    // right
+    &--right {
+        text-align: right;
+        align-self: flex-end;
+        background-color: #ffffff;
+        &::before {
+            @include before();
+            bottom: 0;
+            right: 0;
+            border-top: none;
+            border-bottom: 12px solid #ffffff;
+            margin-right: -10px;
+        }
+    }
+}
+
+.profile {
+    position: absolute;
+    background-color: #ffffff;
+    width: 93%;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 14px;
+    padding-left: 15px;
+    &__name {
+        font-weight: 600;
+        font-size: 24px;
+        cursor: default;
+    }
+    &__images {
+        display: flex;
+        align-items: center;
+    }
+    .profile__tel-img {
+        padding-right: 20px;
+        padding-top: 5px;
+    }
+    .profile__about {
+        cursor: pointer;
+    }
+}
+
+.h1 {
+    position: absolute;
+    transform: rotate(-52deg) translateX(600px) translateY(-220px);
+    font-style: normal;
+    font-size: 150px;
+    color: greenyellow;
+}
