@@ -55,7 +55,6 @@ body {
 }
 
 .chat--right {
-  text-align: right;
   -ms-flex-item-align: end;
       align-self: flex-end;
   background-color: #ffffff;
@@ -79,7 +78,7 @@ body {
 .profile {
   position: absolute;
   background-color: #ffffff;
-  width: 93%;
+  width: 371px;
   height: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;

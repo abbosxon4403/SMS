@@ -34,7 +34,6 @@ body {
     }
     // right
     &--right {
-        text-align: right;
         align-self: flex-end;
         background-color: #ffffff;
         &::before {
@@ -49,16 +48,7 @@ body {
 }
 
 .profile {
-    position: absolute;
-    background-color: #ffffff;
-    width: 93%;
-    height: 80px;
-    align-items: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 14px;
-    padding-left: 15px;
+    @include profile;
     &__name {
         font-weight: 600;
         font-size: 24px;
@@ -78,9 +68,5 @@ body {
 }
 
 .h1 {
-    position: absolute;
-    transform: rotate(-52deg) translateX(600px) translateY(-220px);
-    font-style: normal;
-    font-size: 150px;
-    color: greenyellow;
+    @include sms;
 }

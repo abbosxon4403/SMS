@@ -18,3 +18,24 @@
     border-right: 12px solid transparent;
     border-bottom: 12px solid transparent;
 }
+
+@mixin profile {
+    position: absolute;
+    background-color: #ffffff;
+    width: 371px;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 14px;
+    padding-left: 15px;
+}
+
+@mixin sms {
+    position: absolute;
+    transform: rotate(-52deg) translateX(600px) translateY(-220px);
+    font-style: normal;
+    font-size: 150px;
+    color: greenyellow;
+}
